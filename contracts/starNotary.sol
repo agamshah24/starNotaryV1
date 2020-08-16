@@ -1,6 +1,6 @@
 pragma solidity ^0.6.9;
 
-contract StarNotary {
+contract starNotary {
     
     string public starName;
     address public starOwner;
@@ -12,7 +12,7 @@ contract StarNotary {
     }
 
     function claimStar() public {
-        starOwner = msg.sender;
+        starOwner = msg.sender; 
         emit starClaimed(msg.sender);
     }
     
